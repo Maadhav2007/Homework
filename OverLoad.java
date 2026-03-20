@@ -10,7 +10,7 @@ class OverLoad
 	void sum(int a,String b)
 	{
 		System.out.println("SCHOOL ID:"+a);
-		System.out.println("NAME:"+a);
+		System.out.println("NAME:"+b);
 	}
 	void sum(long no)
 	{
