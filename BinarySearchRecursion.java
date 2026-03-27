@@ -1,24 +1,28 @@
 import java.util.Scanner;
 
-public class BinarySearchRecursion 
+   class BinarySearchRecursion 
 {
 
     
-    static int binarySearch(int arr[], int left, int right, int key) {
+     int binarySearch(int arr[], int left, int right, int key) 
+	{
        
-        if (left > right) {
+        if (left > right) 
+		{
             return -1;
         }
 
         int mid = (left + right) / 2;
 
         
-        if (arr[mid] == key) {
+        if (arr[mid] == key) 
+		{
             return mid;
         }
 
         
-        if (key < arr[mid]) {
+        if (key < arr[mid]) 
+		{
             return binarySearch(arr, left, mid - 1, key);
         }
 
@@ -47,9 +51,11 @@ public class BinarySearchRecursion
 
         int result = binarySearch(arr, 0, n - 1, key);
 
-        if (result == -1) {
+        if (result == -1) 
+		{
             System.out.println("Element not found");
-        } else {
+        } else 
+		{
             System.out.println("Element found at index: " + result);
         }
     }

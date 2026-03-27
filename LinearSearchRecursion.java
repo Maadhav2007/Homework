@@ -4,7 +4,7 @@ class LinearSearchRecursion
 {
 
     
-    static int linearSearch(int arr[], int index, int key) 
+     int linearSearch(int arr[], int index, int key) 
 	{
        
         if (index >= arr.length)
@@ -21,7 +21,7 @@ class LinearSearchRecursion
         return linearSearch(arr, index + 1, key);
     }
 
-    public static void main(String[] args) 
+      void main(String[] args) 
 	{
         Scanner sc = new Scanner(System.in);
 
@@ -41,7 +41,8 @@ class LinearSearchRecursion
 
         int result = linearSearch(arr, 0, key);
 
-        if (result == -1) {
+        if (result == -1) 
+		{
             System.out.println("Element not found");
         } else {
             System.out.println("Element found at index: " + result);
